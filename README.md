@@ -1,6 +1,6 @@
 # Setup instructions
 
-<img src=img/components.jpg /> <img src=img/box.jpg />
+<img src=img/components.jpg width="25%" height="25%" /><img src=img/box.jpg width="25%" height="25%" />
 
 
 ## Inspiration
