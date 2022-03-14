@@ -1,6 +1,6 @@
 # Setup instructions
 
-<img src=img/components.jpg width="25%" height="25%" /> <img src=img/box.jpg width="25%" height="25%" />
+<img src=img/components.jpg /> <img src=img/box.jpg />
 
 
 ## Inspiration
@@ -43,8 +43,8 @@ If you need to attach header pins to the RFID reader, there are plenty of solder
 
 After you have finished the steps in that tutorial, you should be able to run two simple programs.
 
-1. `python3 write_rfid.py` : A script that will ask you for a "card name" to program
-2. `python3 read_rfid.py` : A script that will read the card you programmed and report back it's name and id.
+1. `python3 write_rfid.py` : Asks you for a "card name" to program
+2. `python3 read_rfid.py` : Reads the card you programmed and reports back the name and id.
 
 I opted to use `read_rfid.py` as the entry point for the Spotify integration as well. It ends up containing this logic:
 ```
