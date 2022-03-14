@@ -37,7 +37,7 @@ There are many ways to do this, but I ended up using the following components:
 ## Connecting the components
 
 ### RFID reader
-I followed [this tutorial](https://pimylifeup.com/raspberry-pi-rfid-rc522/), and it pretty much covers everything from how to physically connect pins from the rfid reader to your breadboard and bi, all the way to actually setting up the python code for installing the reader.
+I followed [this tutorial](https://pimylifeup.com/raspberry-pi-rfid-rc522/), and it pretty much covers everything from how to physically connect pins from the rfid reader to your breadboard and pi, all the way to actually setting up the python code for installing the reader.
 
 If you need to attach header pins to the RFID reader, there are plenty of soldering tips on YouTube and a few specific to this application as well. See the equipment list above if you've never done it before.
 
@@ -46,7 +46,7 @@ After you have finished the steps in that tutorial, you should be able to run tw
 1. `python3 write_rfid.py` : Asks you for a "card name" to program
 2. `python3 read_rfid.py` : Reads the card you programmed and reports back the name and id.
 
-I opted to use `read_rfid.py` as the entry point for the Spotify integration as well. It ends up containing this logic:
+I opted to also use `read_rfid.py` as the entry point for the Spotify integration as well. It ends up containing this logic:
 ```
 - Listen for rfid interactions
 - Read the card that was scanned and store the name
