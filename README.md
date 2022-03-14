@@ -4,7 +4,7 @@
 
 
 ## Inspiration
-[Phoniebox](!http://phoniebox.de/index-en.html)
+[Phoniebox](http://phoniebox.de/index-en.html)
 
 ## Components List
 There are many ways to do this, but I ended up using the following components:
@@ -37,7 +37,7 @@ There are many ways to do this, but I ended up using the following components:
 ## Connecting the components
 
 ### RFID reader
-I followed [this tutorial](!https://pimylifeup.com/raspberry-pi-rfid-rc522/), and it pretty much covers everything from how to physically connect pins from the rfid reader to your breadboard and bi, all the way to actually setting up the python code for installing the reader.
+I followed [this tutorial](https://pimylifeup.com/raspberry-pi-rfid-rc522/), and it pretty much covers everything from how to physically connect pins from the rfid reader to your breadboard and bi, all the way to actually setting up the python code for installing the reader.
 
 If you need to attach header pins to the RFID reader, there are plenty of soldering tips on YouTube and a few specific to this application as well. See the equipment list above if you've never done it before.
 
@@ -57,11 +57,11 @@ I opted to use `read_rfid.py` as the entry point for the Spotify integration as 
 ```
 
 ### For the Spotify integration:
-- Follow the instructions [here](!https://github.com/dtcooper/raspotify) for installing Raspotify
-- Create a Spotify "client" in Spotify's [developer portal](!https://developer.spotify.com/dashboard/applications)
+- Follow the instructions [here](https://github.com/dtcooper/raspotify) for installing Raspotify
+- Create a Spotify "client" in Spotify's [developer portal](https://developer.spotify.com/dashboard/applications)
     - You can use the `tokens/tokens.json` file as a reference point for which scopes you will likely need.
-- Authorize your user to said client with this url: https://developer.spotify.com/dashboard/applications/your-client-id/users
-- Follow the instructions here to the ["authorization code flow"](!https://developer.spotify.com/documentation/general/guides/authorization/code-flow/)
+- Authorize your user to said client with this url: https://developer.spotify.com/dashboard/applications/your-client-id/users 
+- Follow the instructions here to the ["authorization code flow"](https://developer.spotify.com/documentation/general/guides/authorization/code-flow/)
     - For inspiration, look at `src/authorization_setup/authorize.py` , `src/authorization_setup/access_token.py` , and `src/refresh_token.py`. I found this to be the most difficult part of the whole process. But, I basically ran these in order to get the credentials right. And then ...
     - In `tokens/tokens.json` you'll see a skeleton of the file that you need but with my tokens removed.
     - It's a bit lazy but in my code I don't even check for token expiration, I just refresh it every time anyway because the performance is good enough.
