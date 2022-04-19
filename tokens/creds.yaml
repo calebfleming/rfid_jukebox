@@ -1,5 +1,5 @@
 client_id: "<client_id>"
 client_secret: "<client_secret>"
 redirect_uri: "<redirect_uri>"
-tokens: "/home/pi/lego_jukebox/tokens/tokens.json"
-device_id: "<pi_devce_id>"
+tokens: "<path to tokens>"
+device_id: "<pi_device_id>"
